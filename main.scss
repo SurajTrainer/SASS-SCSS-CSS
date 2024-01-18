@@ -1,0 +1,88 @@
+//  we have to use this with  sass liver server and also other way.
+
+
+// useful for 
+//variables
+//operators
+// nesting
+//@mixin   => which element we are not want to use again.  then can simply go inside tag and can use on there.
+// example 
+// @mixin flexps {
+//     width: 200vh;
+//     height: 100vh;
+// }
+// then i can include it using @include flexps
+
+// parameter pass
+// partials
+
+
+// we can also make variables in css
+$bg-color : #008080;
+
+
+
+.main_header{
+    width: 200vh;
+    height: 100vh;
+    // margin: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // padding-left: 20%;
+    // background: #f5f5dc;
+    background: $bg-color;
+
+    h1{
+        color: red;
+        font-size: 70px;
+        letter-spacing: .4rem;
+        &:hover{
+            color: azure;  
+          }
+
+          // we can use simply nesting inside this
+
+        //   &::after{
+            // content: "  Suraj Singh";
+        //   }
+    }
+    // h1:hover{
+    //   color: azure;  
+    // }
+
+    p{
+        color: red;
+        font-size: 60px;
+        &:hover{
+            color: azure;  
+          }
+    }
+}
+
+
+
+
+// .main_header{
+//     width: 200vh;
+//     height: 100vh;
+//     // margin: 20%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+    
+//     // background: #f5f5dc;
+//     background: $bg-color;
+// }
+
+// h1{
+//     color: red;
+//     font-size: 70px;
+// }
+
+// p{
+//     color: red;
+//     font-size: 50px;
+// }
